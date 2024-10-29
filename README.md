@@ -1,6 +1,6 @@
 # JSON Hierarchy Manager
 
-Esse é um projeto de 2 partes: CLI e Frontend. O Cli é um analizador de arquivos JSON.
+Esse é um projeto de 2 partes: CLI e Frontend. O Cli é um analizador de arquivos JSON. O Front end é um criador de arquivos JSON em árvore.
 
 ## CLI
 
@@ -16,7 +16,7 @@ Options:
   -h, --help                  display help for command
 
 Commands:
-  analyze [options] <phrase>  Analisa a frase fornecida e exibe os itens no nível de profundidade especificado.
+  analyze [options] <phrase>  Analisa a frase e exibe os itens por nível de profundidade.
   help [command]              display help for command
 ```
 
@@ -39,15 +39,19 @@ bun test
 ### Como usar
 
 ```bash
-# install bun
-# (See https://bun.sh/ for instructions)
-# install dependencies
+# Instalar o bun 
+# # Linux ou MacOS:
+curl -fsSL https://bun.sh/install | bash
+# # Windows:
+powershell -c "irm bun.sh/install.ps1 | iex"
+# Instalar dependencias
 bun install
-# Run
+# Rodar Projeto
 bun dev
 ```
 
 ## Como usar os arquivos JSON gerados pelo Frontend no CLI
 
 Substitua manualmente o arquivo /dict/hierarchy.json pelo arquivo gerado no frontend.
+
 Aviso: Isso vai quebrar os testes.

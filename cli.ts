@@ -11,7 +11,7 @@ program
 
 program
   .command("analyze")
-  .description("Analisa a frase fornecida e exibe os itens no nível de profundidade especificado.")
+  .description("Analisa a frase e exibe os itens por nível de profundidade.")
   .argument("<phrase>", "Frase a ser analisada")
   .option("-d, --depth <n>", "Nível de profundidade da árvore", parseInt)
   .option("-v, --verbose", "Exibe informações detalhadas de desempenho")
